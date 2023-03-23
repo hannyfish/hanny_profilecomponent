@@ -1,0 +1,90 @@
+/*Bases*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --dcyan: hsl(185, 75%, 39%);
+  --vdarkdeblue: hsl(229, 23%, 23%);
+  --dgrayblue: hsl(227, 10%, 46%);
+  --dgray: hsl(0, 0%, 59%);
+}
+
+body {
+  background-color: var(--dcyan);
+  background-image: url("https://raw.githubusercontent.com/hannyfish/hanny_profilecomponent/9e162416b6ac4e83afb084d41f03f4ad48d91146/bg-pattern-top.svg"), url("https://raw.githubusercontent.com/hannyfish/hanny_profilecomponent/9e162416b6ac4e83afb084d41f03f4ad48d91146/bg-pattern-bottom.svg");
+  background-position: -150% 100%, 150% -50%;
+  background-repeat: no-repeat, no-repeat;
+  object-fit: scale-down;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.profile-bg {
+  width: 350px;
+  height: 350px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.profile-head {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+}
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -20%;
+}
+.profile-name {
+  font-weight: 700;
+  color: var(--vdarkdeblue);
+  margin-top: -10px;
+}
+.profile-name b {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--dgrayblue);
+}
+.profile-location {
+  font-weight: 400;
+  color: var(--dgrayblue);
+  font-size: 14px;
+  margin-top: -5%;
+}
+.profile-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20%;
+  border-top: 1px solid hsla(227, 10%, 46%, 40%);
+}
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.profile-stat h1 {
+  font-weight: 700;
+  color: var(--vdarkdeblue);
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.profile-stat h2 {
+  font-weight: 400;
+  color: var(--dgray);
+  font-size: 14px;
+  margin: 0;
+}

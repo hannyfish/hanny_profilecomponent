@@ -8,10 +8,10 @@
 }
 
 body {
-  background-color: var(--dcyan);
-  background-image: url("https://raw.githubusercontent.com/hannyfish/hanny_profilecomponent/9e162416b6ac4e83afb084d41f03f4ad48d91146/bg-pattern-top.svg"), url("https://raw.githubusercontent.com/hannyfish/hanny_profilecomponent/9e162416b6ac4e83afb084d41f03f4ad48d91146/bg-pattern-bottom.svg");
-  background-position: -150% 100%, 150% -50%;
+  background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-repeat: no-repeat, no-repeat;
+  background-color: hsl(185deg, 75%, 39%);
   object-fit: scale-down;
   min-height: 100vh;
   display: grid;
